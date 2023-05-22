@@ -1,0 +1,35 @@
+/* Wallet */
+
+.wallet__wrapper {
+  & .wallet__button button {
+    padding: 15px 30px !important;
+  }
+
+  @include max-desktop_1280 {
+
+    .wallet__button,
+    .wallet__address {
+      flex-direction: column;
+      flex-wrap: nowrap;
+
+      & > * {
+        width: 100% !important;
+      }
+    }
+  }
+
+  @include max-desktop_380 {
+    .wallet__address {
+      align-items: flex-start !important;
+
+      & span {
+        overflow: hidden;
+        max-width: 100%;
+      }
+    }
+
+    & .wallet__button button {
+      padding: 15px 15px !important;
+    }
+  }
+}

@@ -1,0 +1,22 @@
+.signUp-lk__wrapper {
+  @include max-desktop_576 {
+    .signUp-lk__invite,
+    .signUp-lk__pass,
+    .signUp-lk__button {
+      flex-direction: column;
+      gap: 20px;
+
+      & > * {
+        width: 100%;
+      }
+    }
+
+    .signUp-lk__button {
+      text-align: center;
+
+      button {
+        width: 100%;
+      }
+    }
+  }
+}

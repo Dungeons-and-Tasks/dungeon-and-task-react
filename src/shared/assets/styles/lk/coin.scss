@@ -1,0 +1,30 @@
+.coin__wrapper {
+  @include max-desktop_1024 {
+    height: unset !important;
+    .coin {
+      flex-direction: column;
+      gap: 40px !important;
+    }
+  }
+
+  @include max-desktop_576 {
+    .input_block .block_row {
+      flex-direction: column;
+    }
+  }
+
+  @include max-desktop_380 {
+    .coin > .block_column .block_row {
+      padding: 25px !important;
+
+      gap: 10px !important;
+
+      .opacity_60p {
+        white-space: nowrap;
+      }
+    }
+    .block_row {
+      flex-direction: column;
+    }
+  }
+}

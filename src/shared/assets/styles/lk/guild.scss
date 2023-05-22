@@ -1,0 +1,10 @@
+@include max-desktop_380 {
+  .sidebar__guild .card.guild__stake {
+    padding: 10px !important;
+
+    & * {
+      font-size: 10px !important;
+    }
+  }
+}
+

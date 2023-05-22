@@ -1,0 +1,19 @@
+.oauth__wrapper {
+  @include max-desktop_640 {
+    width: 90% !important;
+    margin: 0 30px;
+
+    .form {
+      width: 100%;
+    }
+  }
+
+  @include max-desktop_480 {
+    .oauth .block_row {
+      justify-content: center !important;
+    }
+    .opacity_0 {
+      display: none;
+    }
+  }
+}

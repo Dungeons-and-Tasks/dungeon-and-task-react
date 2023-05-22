@@ -1,0 +1,99 @@
+.lk__wrapper {
+  @include max-desktop_968 {
+    flex-direction: column;
+    gap: 40px;
+
+    &.lk__wrapper_reverse {
+     flex-direction: column-reverse;
+    }
+
+    & > div,
+    & .sidebar {
+      width: 100%;
+      max-width: unset;
+    }
+  }
+  .wallet__sidebar a.button {
+    width: 100% !important;
+  }
+}
+
+.lk__wrapper {
+  gap: 32px;
+}
+
+.lk__content {
+  max-width: 620px;
+  width: 100%;
+  gap: 30px;
+  border-radius: 20px;
+}
+
+/* surface */
+.lk__default {
+  position: absolute !important;
+}
+
+.lk__surface_default {
+  top: -400px;
+  left: -430px;
+  max-height: 1200px;
+}
+
+.lk__surface_wrapper {
+  width: 100%;
+  height: 1px !important;
+  max-height: 1px !important;
+
+  position: relative;
+  top: 0;
+  z-index: 12;
+}
+
+.lk__surface {
+  position: relative;
+  top: -1600px;
+  left: -630px;
+  max-height: 1200px;
+}
+
+.lk__surface2 {
+  position: relative;
+  left: 820px;
+  top: 120px;
+  max-height: 1000px;
+}
+
+.lk__surface3 {
+  position: absolute;
+  right: -500px;
+  top: -600px;
+  max-width: 2200px;
+
+  @include max-desktop_1280 {
+    //max-width: 100vw;
+  }
+
+  @include max-desktop_800 {
+    display: none;
+    right: -200px;
+    top: -300px;
+    max-width: 1300px;
+  }
+}
+
+
+.lk__surface_lk-wrapper {
+  position: fixed;
+  top: 0;
+  bottom: 100px;
+  max-height: 100vh !important;
+  z-index: 0 !important;
+
+  .lk__surface2 {
+    position: relative;
+    left: 820px;
+    top: 0;
+    max-height: 900px;
+  }
+}
